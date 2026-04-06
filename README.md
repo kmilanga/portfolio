@@ -21,7 +21,6 @@ A diferencia de un portfolio convencional, este proyecto se basa en el **Enfoque
 - **Best Practices:** 100
 - **SEO:** 100
 
-## ✒️ Camilo Andrés Plaza Murcia
-**[Tu Nombre]** - *Desarrollo Web & Marketing Digital*
-- LinkedIn: [Enlace a tu perfil]
-- Web: [Tu URL de Netlify]
+## ✒️ Autor
+**Camilo Andrés Plaza Murcia** - *Desarrollo Web & Marketing Digital*
+- LinkedIn: [[Enlace a tu perfil]](https://www.linkedin.com/in/camiloplazamurcia/)
