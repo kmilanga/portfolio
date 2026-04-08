@@ -1,6 +1,6 @@
 # Portfolio Profesional | Estrategia & Desarrollo Web
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/TU_API_ID/deploy-status)](https://tu-url.netlify.app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/TU_API_ID/deploy-status)](https://camiloplaza-cordoba.netlify.app/)
 
 Este es mi portfolio personal, diseñado y programado desde cero. No es solo una muestra de código, sino una herramienta de conversión orientada al marketing digital y la experiencia de usuario (UX).
 
@@ -21,7 +21,6 @@ A diferencia de un portfolio convencional, este proyecto se basa en el **Enfoque
 - **Best Practices:** 100
 - **SEO:** 100
 
-## ✒️ Camilo Andrés Plaza Murcia
-**[Tu Nombre]** - *Desarrollo Web & Marketing Digital*
-- LinkedIn: [Enlace a tu perfil]
-- Web: [Tu URL de Netlify]
+## ✒️ Autor
+**Camilo Andrés Plaza Murcia** - *Desarrollo Web & Marketing Digital*
+- LinkedIn: [[Enlace a mi perfil]](https://www.linkedin.com/in/camiloplazamurcia/)
