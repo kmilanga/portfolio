@@ -19,8 +19,14 @@ function updateThemeLabel() {
 
 function closeMobileMenu() {
   if (!mobileMenu || !menuToggle) return;
-  mobileMenu.style.display = 'none';
+  mobileMenu.classList.remove('is-open');
   menuToggle.setAttribute('aria-expanded', 'false');
+}
+
+function openMobileMenu() {
+  if (!mobileMenu || !menuToggle) return;
+  mobileMenu.classList.add('is-open');
+  menuToggle.setAttribute('aria-expanded', 'true');
 }
 
 updateThemeLabel();
@@ -34,8 +40,7 @@ themeToggle?.addEventListener('click', () => {
 
 menuToggle?.addEventListener('click', () => {
   const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
-  menuToggle.setAttribute('aria-expanded', String(!expanded));
-  mobileMenu.style.display = expanded ? 'none' : 'block';
+  expanded ? closeMobileMenu() : openMobileMenu();
 });
 
 mobileLinks.forEach(link => {
@@ -56,3 +61,15 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.16 });
 
 document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+
+const backToTop = document.getElementById('backToTop');
+
+if (backToTop) {
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('is-visible', window.scrollY > 400);
+  }, { passive: true });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
