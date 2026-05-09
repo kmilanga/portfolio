@@ -426,12 +426,7 @@ p {
 }
 
 .project-stack {
-  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
-}
-
-.project-column {
-  display: grid;
-  gap: var(--space-4);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .project-card,
@@ -440,19 +435,6 @@ p {
   padding: var(--space-6);
   box-shadow: var(--shadow-sm);
 }
-
-.project-card-featured {
-  background: var(--color-text);
-  color: var(--color-text-inverse);
-  min-height: 100%;
-}
-
-.project-card-featured p,
-.project-card-featured .project-meta span,
-.text-link-light,
-.project-card-featured .tag-list li { color: rgba(251, 248, 243, 0.82); }
-.project-card-featured,
-.project-card-featured .tag-list li { border-color: rgba(255,255,255,0.12); }
 
 .tag-list {
   list-style: none;
@@ -562,31 +544,6 @@ p {
     transition-duration: 0.01ms !important;
   }
   .reveal { opacity: 1; transform: none; }
-}
-
-/* #contacto hereda color: var(--color-text-inverse) de .section-accent — sin override */
-
-.project-card-featured .text-link-light:hover {
-  color: #fbf8f3d1 !important;
-  opacity: 1;
-}
-
-
-/* Forzar texto oscuro en la tarjeta destacada cuando el tema es oscuro */
-[data-theme="dark"] .project-card-featured {
-    background-color: #f4f1ea !important; 
-}
-
-[data-theme="dark"] .project-card-featured h3,
-[data-theme="dark"] .project-card-featured p,
-[data-theme="dark"] .project-card-featured .project-meta span,
-[data-theme="dark"] .project-card-featured .tag-list li {
-    color: #1a1a1a !important; 
-}
-/* Corrección del enlace "Ver estrategia y diseño" en modo oscuro sobre fondo crema */
-[data-theme="dark"] .project-card-featured .text-link-light:hover {
-    color: #1a1a1a !important; 
-    opacity: 1;
 }
 
 /* ── Showcase project title (semántica correcta, sin h2) ── */
